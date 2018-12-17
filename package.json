@@ -1,0 +1,22 @@
+{
+  "name": "server-side",
+  "version": "1.0.0",
+  "description": "Server side",
+  "main": "index.js",
+  "author": "B",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "watch": "nodemon -e js ./src/",
+    "migrate": "knex migrate:latest",
+    "drop-db": "node ./setup-tasks/drop-db.js",
+    "create-db": "node ./setup-tasks/create-db.js && echo 'done'"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "express": "^4.16.4",
+    "knex": "^0.16.2",
+    "pg": "^7.7.1",
+    "pg-connection-string": "^2.0.0"
+  }
+}

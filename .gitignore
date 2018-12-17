@@ -1,0 +1,8 @@
+node_modules/
+tmp/
+.idea/
+*.log
+.env
+.DS_Store
+*.vscode
+yarn.lock
