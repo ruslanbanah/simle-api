@@ -1,4 +1,4 @@
-Set config ```./src/config/index.js
+Set config ```./src/config/index.js```
 
 ```yarn```
 ```yarn create-db```
