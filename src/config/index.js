@@ -1,7 +1,11 @@
 const {parse} = require('pg-connection-string')
-const DATABASE_URL = process.env.DATABASE_URL || `postgresql://localhost/my-lib`
 
 module.exports = {
-  port: 8080,
-  database: parse(DATABASE_URL)
+  port: 8081,
+  database: {
+    host : '127.0.0.1',
+    user : 'your_database_user',
+    password : 'your_database_password',
+    database : 'mylib'
+  }
 }
